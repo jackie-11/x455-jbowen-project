@@ -1,0 +1,356 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Adding fonts */
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "montserrat-italic";
+  src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+body {  /* Text color, size, and font entire website */
+  color: #777777;
+  font-size: 16px;
+  font-family:"montserrat-regular";
+}
+
+
+h2 { /* Appearance of h2 */
+  color: black;
+  font-family: "montserrat-regular";
+  font-style: normal;
+  font-weight: 400;
+}
+
+h3 { /* used for exhibitions, page-4 */
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: right;
+}
+
+h4 { /* used for exhibition descrtiption, page-4 */
+  color: white;
+  font-size: 19px;
+  text-align: right;
+  font-weight: 500;
+  width: 100%;
+}
+
+.logo { /* Logo size and alignment */
+  width: 250px;        /* by default, align to the left */
+  display: block;
+  margin-left: 8%;
+ 
+  /* If you want it to be centered
+  display: block;     
+  margin-left: auto;  
+  margin-right: auto;
+  */
+}
+/***** BEG styling nav bar **********/
+nav > div > ul {  /* Option to add bullet points, numbers, etc. to list item nav bar */
+  list-style: none;
+}
+
+a { /* Styling nav bar (why doesn't color apply?) */
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 20px 5px 20px;
+}
+
+a:hover { /* Nav when hovering */
+  color: grey;
+  cursor: grab;
+}
+
+.flex-container { /* Flex container for nav bar */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+/********* BEG styling dropdown **********/
+.dropdown { /* Setting position of dropdown */
+  position: absolute;
+  display: none;
+  /* hide dropdown menu and button in bigger screen size */
+  top: 0;
+  /* top right bottom left work with position:absolute, set an absolute position where to put the dropdown menu */
+  /*left: 0;*/
+  /* by default, always align to left */
+  right: 0;
+  /* if dropdown is set to right, dropdown-content should be set to right */
+}
+
+.dropbtn { /* Hamburger */
+  background-color: rgba(0, 102, 102, 0);
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  line-height: normal;
+}
+
+.dropbtn:hover { /* Hamburger when hovering */
+  color: #ffffff;
+}
+
+.dropdown-content { /* Dropdown box */
+  display: none;
+  /* set display to none, so dropdown menu won't show till hover dropdown */
+  position: absolute;
+  right: 0;
+  /* if dropdown is set to right, dropdown-content should be set to right */
+  background-color: rgba(210, 210, 210, 0.8);
+  min-width: 280px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /*z-index: 1;*/
+}
+
+.dropdown-content a { /* Dropdown text */
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  line-height: normal;
+}
+
+.dropdown-content a:hover { /* Dropdown item hover */
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover {
+  background-color: rgba(210, 210, 210, 0.8);
+}
+
+.active-page { /* Adding underline to active nav item */
+  border-bottom: 1px solid black;
+}
+  
+.active-menu-item { /* Adding underline to active dropdown item */
+  border-bottom: 1px solid black;
+}
+
+/********** BEG styling footer **********/
+.padding-right { 
+  padding-right: 15px;
+}
+
+.to-top { /* styling link back to top */
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+div.to-top a {  
+  border-bottom: none;
+}
+
+footer > div.social-icon { /* size, padding, etc. of icons */
+  padding: 15px;
+  display: flex;
+  justify-content: right;
+  background-color: lightblue;
+  font-size: smaller;
+}
+
+footer a { 
+  border-bottom: none;
+  color: rgb(33, 106, 208);
+}
+
+footer { /* position of footer */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+a { /* color and text decoration of links (nav bar, footer)*/
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) { /* Not sure what this does */
+  .logo {
+    width: 200px;
+  }
+
+  nav > div.horizontal-nav {
+    display: none;
+    /* hide the nav bar in small screen size */
+  }
+
+  nav {
+    /* padding: top right bottom left */
+    padding: 50px 0px 0px 0px;
+  }
+
+  .dropdown {
+    display: block;
+    /* show dropdown menu and button in small screen size */
+  }
+}
+
+/********** BEG styling hero page **********/
+.home-page {
+  min-width: 100%;
+  min-height: 85%;
+  position: fixed;
+  right: 0; /* need to have position set to "fixed" */
+  bottom: 0; /* need to have position set to "fixed" */
+  width: auto;
+  height: auto;
+  background: #eee url(../images/13.-green-forest-1989-eyvind-earle-courtesy-of-the-earle-family-trust-1.jpg) no-repeat center;
+  background-size: cover;
+  display: flex; /* for hero text */
+  justify-content: right; /* for hero text */
+  align-items:last baseline; /* for hero text */
+  z-index: -1;
+  padding-right:10%;
+}
+.hero-text {
+  color: white;
+  font-size: 4em;
+  font-weight:400;
+  font-family:"montserrat-regular";
+  font-style:italic;
+  padding-right: 0px;
+  padding-bottom:120px;
+}
+.hero-text-sub {
+  color: white;
+  font-size: 1.5em;
+  font-weight:400;
+  font-family:"montserrat-italic";
+  font-style:italic;
+  position:fixed;
+  padding-bottom:60px;
+}
+
+
+/********** BEG styling carousel **********/
+.carousel-wrapper{
+  height:350px;
+  position:relative;
+  width:800px;
+  margin:0 auto;
+  margin-top: 5%;
+}
+.carousel-item{
+  /* position, top, bottom, left, right, change the image position, don't alter this */
+  position:absolute; 
+  top:0; 
+  bottom:0;
+  left:0;
+  right:0;
+  padding: 190px 50px 25px 200px; /* padding changes text location */
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+  border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  left:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+ 
+.arrow-next{
+    right:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+
+.light{
+  color:white;
+}
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+  background:url(../images/exhibition-tabouret.jpg);
+  background-size:cover;
+  }
+.item-2{
+  background:url('/assets/images/exhibition-mockrin.jpg');
+   background-size:cover;
+}
+.item-3{
+  background:url('/assets/images/exhibition-fung.jpg');
+   background-size:cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  }
+/* END styling carousel */
+
+/********** BEG styling accordion **********/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+
+.active, .accordion:hover { /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  background-color: #ccc;
+}
+
+
+.panel { /* Style the accordion panel. Note: hidden by default */
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
