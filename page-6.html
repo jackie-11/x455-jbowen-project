@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>Video</title>
+  <style>
+    .flex-container-video { /* move this section to css file */
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 0;
+      margin-top: 7%; /* margins for video top */
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Align ref: https://www.w3schools.com/css/css_align.asp -->
+  <img class="logo" src="./assets/images/logo-bowen-gallery.png" alt="gallery logo"/>
+  <nav>
+    <div class="horizontal-nav">
+      <ul class="flex-container">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="page-2.html">About</a>
+        </li>
+        <li>
+          <a href="page-3.html">Artists</a>
+        </li>
+        <li>
+          <a href="page-4.html">Exhibitions</a>
+        </li>
+        <li>
+          <a href="page-5.html">Publications</a>
+        </li>
+        <li>
+          <a href="#" class="active-page">Video</a>
+        </li>
+      </ul>
+    </div>
+    <section> <!--This is the video section (shoudld this be inside nav?)-->
+      <!--<h1>Cuttery Page</h1>  (removed the page header)-->
+      <div class="flex-container-video">
+        <!-- start with 1 video and add more to watch the alignment of flex display -->
+        <div style="width: 330px; word-wrap: break-word; text-align: center;">
+          <h2>Chen Ke: "Bauhaus Girl"</h2>
+          <iframe width="330" height="200" src="https://www.youtube.com/embed/tf63_ECDcpQ" title="YouTube video player" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+          <div>
+            <button class="accordion">Description</button>
+            <div class="panel">
+              <p style="text-align: left;">Chen debuts the series of Bauhaus Gal. These portraits are based on the zeitgeist-charged 
+                archive photos of the Bauhaus. Immersed in their own world and in deep thought, they are completely oblivious 
+                of the gazes from the outside.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- second video is here, make sure that you use only one flex container-->
+        <div style="width: 330px; word-wrap: break-word; text-align: center;">
+          <h2>Paula Rego's 'The Dance'</h2>
+          <iframe width="330" height="200" src="https://www.youtube.com/embed/Woo3pr4-VQE" title="YouTube video player" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <div>
+          <button class="accordion">Description</button>
+          <div class="panel">
+            <p style="text-align:left;">Discover the story behind Paula Rego's painting 'The Dance'. We hear from 
+              Paintings Conservator, Camille Polkownik about Rego's process and the artist's son shares his 
+              experience of posing for the painting.</p>
+          </div>
+        </div>
+        </div>
+  
+        <!-- second video is here, make sure that you use only one flex container-->
+        <div style="width: 330px; word-wrap: break-word; text-align: center;">
+          <h2>Emma Webster's Studio</h2>
+          <iframe width="330" height="200" src="https://www.youtube.com/embed/1t4xCVZP0C8" title="YouTube video player" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <div>
+          <button class="accordion">Description</button>
+          <div class="panel">
+            <p style="text-align:left;"> "The Dolman's" is Emma Webster's second exhibition. 
+              The paintings come from a hybrid sketching-sculpting process within screen-space. 
+              Webster first constructs scenes in virtual reality, which she then embellishes with theatrical illumination.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- dropdown-menu -->
+    <div class="dropdown">
+      <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="Page-2.html">About</a>
+        <a href="Page-3.html">Artists</a>
+        <a href="Page-4.html">Exhibitions</a>
+        <a href="Page-5.html">Publications</a>
+        <a href="#" class="active-menu-item">Video</a>
+      </div>
+    </div>
+  </nav>
+  <section style="width: auto; padding:20px;">
+    <article style="width: 70%; float: left; ">
+      <div style="border-right: 1px solid rgb(181, 181, 181);">
+        <!-- TODO: add content -->
+        <!--hello page-6.html-->
+      </div>
+    </article>
+    <aside style="width: 30%; float: right; padding-left: 20px;">
+      <div>
+        <!--add content here-->
+        <!--hello class-->
+      </div>
+    </aside>
+  </section>
+  <footer style="width: 100%;">
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right"></a>
+      <!--Instagram-->
+      <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right"></a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/" target="_blank" class="fa fa-twitter fa-lg fa-2x padding-right"></a>
+      <!-- Pinterest -->
+      <a href="https://www.pinterest.com/" target="_blank" class="fa fa-pinterest fa-lg fa-2x padding-right"></a>
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin fa-lg fa-2x padding-right"></a>
+      <!-- GitHub -->
+      <a href="https://github.com/" target="_blank" class="fa fa-github-alt fa-lg fa-2x"></a>
+    </div>
+  </footer>
+</body>
+</html>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>

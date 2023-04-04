@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>Exhibitions</title>
+  <style>
+    div.scrolling {
+      width: 600px;
+      height: 90px;
+      padding: 20px;
+      border: gray 1px;
+      overflow: auto;
+      /* auto - similar to scroll, but it adds scrollbars only when necessary */
+      /* overflow is shortcut for overflow-y and overflow-x */
+      /* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_overflow-x */
+      /* https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+    }
+  </style>
+</head>
+<body>
+  <!-- Align ref: https://www.w3schools.com/css/css_align.asp -->
+  <img class="logo" src="./assets/images/logo-bowen-gallery.png" alt="gallery logo"/>
+  <nav>
+    <div class="horizontal-nav">
+      <ul class="flex-container">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="page-2.html">About</a>
+        </li>
+        <li>
+          <a href="page-3.html">Artists</a>
+        </li>
+        <li>
+          <a href="#" class="active-page">Exhibitions</a>
+        </li>
+        <li>
+          <a href="page-5.html">Publications</a>
+        </li>
+        <li>
+          <a href="page-6.html">Video</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div class="carousel-wrapper">
+        <span id="item-1"></span>
+        <span id="item-2"></span>
+        <span id="item-3"></span>
+        <div class="carousel-item item-1">
+          <h3>Claire Tabouret</h3>
+          <h4 style="font-style:italic;">L'Urgence et la Patience: March 29 - June 3, 2023</h4>
+          <a class="arrow arrow-prev" href="#item-3"></a>
+          <a class="arrow arrow-next" href="#item-2"></a>
+        </div>
+        
+        <div class="carousel-item item-2">
+          <h3>Jesse Mockrin</h3>
+          <h4 style="font-style:italic;">Reliquary: April 15 - May 27, 2023<h4>
+          <a class="arrow arrow-prev" href="#item-1"></a>
+          <a class="arrow arrow-next" href="#item-3"></a>
+        </div>
+        
+        <div class="carousel-item item-3">
+          <h3>Dominique Fung</h3>
+          <h4 style="font-style:italic;">Objects for Comfort in the Afterlife: May 13 - July 15, 2023</h4>
+          <a class="arrow arrow-prev" href="#item-2"></a>
+          <a class="arrow arrow-next" href="#item-1"></a>
+        </div>
+      </div>
+    </div>
+    <!-- dropdown-menu -->
+    <div class="dropdown">
+      <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="Page-2.html">About</a>
+        <a href="Page-3.html">Artists</a>
+        <a href="#" class="active-menu-item">Exhibitions</a>
+        <a href="Page-5.html">Publications</a>
+        <a href="Page-6.html">Video</a>
+      </div>
+    </div>
+  </nav>
+  <section style="width: auto; padding:20px;">
+    <article style="width: 70%; float: left; ">
+      <div style="border-right: 1px solid rgb(181, 181, 181);">
+        <!-- TODO: add content -->
+      </div>
+    </article>
+    <aside style="width: 30%; float: right; padding-left: 20px;">
+      <div>
+        <!--add content here if wanted-->
+      </div>
+    </aside>
+  </section>
+  <section>
+    <article>
+    <div class="scrolling" style="margin:auto">
+      <p style="text-align: center; ">
+        Plan Your Visit
+      </p>
+      <p>
+        Exhibitions are free and open to the public.
+         No booking is required when visiting the exhibitions.
+         Masks are welcome, but not required for visitors and staff at Bowen Gallery
+      </p>
+      <p>
+        Parking is available under the gallery. 
+        Parking rates are $3 an hour, and a $13 daily maximum.
+      </p>
+    </div>
+    </article>
+  </section>
+  <!-- <div class="to-top"><a href="#">Top</a></div> --> <!--Removed this to get rid of link to top-->
+  <footer style="width: 100%;">
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right"></a>
+      <!--Instagram-->
+      <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right"></a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/" target="_blank" class="fa fa-twitter fa-lg fa-2x padding-right"></a>
+      <!-- Pinterest -->
+      <a href="https://www.pinterest.com/" target="_blank" class="fa fa-pinterest fa-lg fa-2x padding-right"></a>
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin fa-lg fa-2x padding-right"></a>
+      <!-- GitHub -->
+      <a href="https://github.com/" target="_blank" class="fa fa-github-alt fa-lg fa-2x"></a>
+    </div>
+  </footer>
+</body>
+</html>
