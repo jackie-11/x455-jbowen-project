@@ -311,7 +311,7 @@ a { /* color and text decoration of links (nav bar, footer)*/
    background-size:cover;
 }
 .item-3{
-  background:url('/assets/images/exhibition-fung.jpg');
+  background:url(../images/exhibition-fung.jpg);
    background-size:cover;
 }
 
