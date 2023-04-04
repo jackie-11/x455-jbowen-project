@@ -307,7 +307,7 @@ a { /* color and text decoration of links (nav bar, footer)*/
   background-size:cover;
   }
 .item-2{
-  background:url('/assets/images/exhibition-mockrin.jpg');
+  background:url(../images/exhibition-mockrin.jpg);
    background-size:cover;
 }
 .item-3{
